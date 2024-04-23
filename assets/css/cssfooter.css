@@ -1,0 +1,57 @@
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 15vh;
+  background-color: wheat;
+  border-style: solid;
+}
+
+
+.container-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 5%;
+  align-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+
+.Nosotros{
+  width: 70%;
+  height: auto;
+  text-align: center;
+}
+.anosotros{
+  padding: 10px;
+  font-size: 30px;
+  color: white;
+  box-shadow: 10px 5px 5px black;
+  border-radius: 50em;
+  background-color: #057275;
+}
+.anosotros:hover{
+  background: #5c754a;
+  border-radius: 50em;
+} 
+
+
+
+.sena{
+  width: 30%;
+  height: auto;
+  border-radius: 50em;
+  text-align: center;
+  margin: 15px;
+  box-shadow: 10px 5px 5px black;
+}
+
+
+
+.imagen_sena{
+  width: 70%;
+  height: 70%;
+  text-align: center;
+  
+}
+

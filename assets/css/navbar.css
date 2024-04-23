@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+    text-decoration: none;
+}
+.header1{
+    background: #057275;
+    height: 80px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    border: 3px solid wheat;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    max-width: 992px;
+    margin: 0 auto;
+}
+.nav-link {
+    color: wheat;
+    text-shadow: 3px 3px 1px Black;
+}
+.logo{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 0 40px;
+    line-height: 80px;
+    transition: color 0.3s, font-size 0.3s;
+}
+.logo:hover{
+    color: #32D904;
+    font-size: 1.7em;
+}
+.nav-menu{
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+}
+.nav-menu-item{
+    font-size: 1.3em;
+    margin: 0 20px;
+    line-height: 80px;
+    text-transform: uppercase;
+    width: max-content;
+}
+.nav-menu-link{
+    transition: color 0.3s, font-size 0.3s;
+    padding: 8px 12px;
+}
+.nav-menu-link:hover,
+.nav-menu-link_active{
+    color: #32D904;
+    font-size: 1.2em;
+}
+.nav-toggle{
+    color: wheat;
+    background: none;
+    border: none;
+    font-size: 1.7em;
+    padding: 8px 20px;
+    line-height: 60px;
+    text-shadow: 3px 3px 1px Black;
+    display: none;
+    cursor: pointer;
+}
+@media (max-width: 768px){
+
+    .header1{
+        height: 60px;
+        background: #033133cc;
+    }
+    .logo{
+        font-size: 1.4em;
+        padding: 0 20px;
+        line-height: 60px;
+    }
+    .logo:hover{
+        color: #32D904;
+        font-size: 1.6em;
+    }
+    .nav-menu{
+        flex-direction: column;
+        align-items: flex-start;
+        margin-right: 20px;
+        background: #057275;
+        position: fixed;
+        top: 59px;
+        width: 100%;
+        padding: 20px 0;
+        height: calc(100% - 60px);
+        overflow-y: auto;
+        left: 1000px;
+        transition: left 0.5s;
+    }
+    .nav-menu-item{
+        line-height: 70px;
+    }
+    .nav-menu-link:hover,
+    .nav-menu-link_active{
+        color: #32D904;
+        font-size: 1.2em;
+    }
+    .nav-toggle{
+        display: block;
+        padding: 0px 20px;
+    }
+    .nav-menu_visible{
+        left: 0;
+    }
+    .nav-toggle:focus:not( :focus-visible){
+        outline: none;
+    }
+}
+
+.menu-vertical{
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 200px;
+    background: #057275;
+    border-radius: 5px;
+    border: 3px solid wheat;
+}
+li{
+    transition: font-size 0.4s;
+}
+.nav-menu-item:hover .menu-vertical{
+    display: block;
+}
+.menu-vertical li:hover{
+    font-size: 1.2em;
+}
+.menu-vertical li a{
+    display: block;
+    color: wheat;
+    text-shadow: 3px 3px 1px Black;
+    padding:  0px 15px 1px 15px;
+}

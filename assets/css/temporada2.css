@@ -1,0 +1,77 @@
+body {
+    background: linear-gradient(45deg, #eb5656, #f189e9, #d85087, #ff62fa);
+    background-size: 300% 300%;
+    animation: color 12s ease-in-out infinite;
+    margin: 0; 
+    padding: 0; 
+    font-family: Arial, sans-serif; 
+}
+
+.columnas {
+    column-count: 2;
+    color: #000;
+}
+
+.aside1, .aside2, .aside3, .aside4, .aside5, .aside6, .aside7, .aside8, .aside9, .aside10 {
+    width: 100%;
+}
+
+/* Estilo del encabezado */
+.header {
+    color: white; 
+    padding: 20px; 
+    text-align: center;
+}
+
+/* Estilo del título principal */
+h1 {
+    font-size: 36px; 
+    margin: 0; 
+}
+
+/* Estilo del subtítulo */
+h2 {
+    font-size: 24px; 
+    margin-top: 10px; 
+}
+
+/* Estilo del contenido */
+.Content {
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 20px; 
+    margin: 20px; 
+    border-radius: 10px; 
+    color: #000;
+}
+
+/* Estilo para los párrafos */
+p {
+    font-size: 18px;
+    line-height: 1.5; /
+}
+
+/* Estilo para el video */
+video {
+    width: 100%; 
+    border: 5px solid #445b6c; 
+    margin: 10px 0; 
+}
+
+/* Animación de fondo */
+@keyframes color {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Estilo para los íconos */
+i.fa {
+    font-size: 24px;
+    margin-right: 5px;
+}

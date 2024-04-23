@@ -1,0 +1,134 @@
+body{ background: linear-gradient(45deg,#69792f, #2b463e, #057275, #00a86b);
+    background-size: 300% 300%;
+    animation: color 12s ease-in-out infinite;
+    overflow-x: hidden;
+    }
+ 
+ .container{
+    margin-left: 5px;
+    width:98%;
+    height:80vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow: hidden;
+  }
+  .slider {
+    margin-bottom: 40px;
+    height: 750px;
+    width:100vw;
+    display: flex;
+    perspective: 1000px;
+    position: relative;
+    align-items:center;
+  }
+  .box1{background:url('https://4kwallpapers.com/images/walls/thumbs_3t/9367.jpg');
+    background-size:cover;
+    background-position:center center;}
+  .box2{
+  background:url('https://p4.wallpaperbetter.com/wallpaper/200/433/178/rick-and-morty-cartoons-tv-shows-hd-wallpaper-preview.jpg');
+    background-size:cover;
+    background-position:center center;}
+  .box3{
+  background:url('https://i.ytimg.com/vi/CkeZVqUBSz4/maxresdefault.jpg');
+    background-size:cover;
+    background-position:center center;}
+  .box4{
+  background:url('https://4kwallpapers.com/images/walls/thumbs_3t/9363.jpg');
+    background-size:cover;
+    background-position:center center;}
+  .box5{
+  background:url('https://wallpapers.com/images/featured/cool-rick-and-morty-2qy1xyshw0h9uxk4.jpg');
+    background-size:cover;
+    background-position:center center;}
+  .box6{
+  background:url('https://i.pinimg.com/originals/61/de/2b/61de2ba956418acd9ab454ceca15bbb2.jpg');
+    background-size:cover;
+    background-position:center center;}
+  
+  
+  .slider [class*="box"] {
+    overflow: hidden;
+    border-radius:20px;
+    transition: all 1s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+      position:absolute;
+  }
+  
+  .slider [class*="box"]:nth-child(1) {
+    width: 100vh;
+    height: 60vh;
+    transform: scale(0.2) translate(-50%,-50%);
+    top: 10%;
+    z-index:1;
+  }
+  .slider [class*="box"]:nth-child(2),
+  .slider [class*="box"]:nth-child(6) {
+    width: 100vh;
+    height: 60vh;
+    transform: scale(0.4) translate(-50%,-50%);
+    top: 20%;
+    z-index:2;
+  }
+  .slider [class*="box"]:nth-child(3),
+  .slider [class*="box"]:nth-child(5) {
+    width: 100vh;
+    height: 60vh;
+    transform: scale(0.6) translate(-50%,-50%);
+    top: 30%;
+    z-index:3;
+  }
+  .slider [class*="box"]:nth-child(4) {
+    width: 60vw;
+    height: 60vh;
+    border-color: #c92026;
+    color: #fff;
+    transform: scale(1) translate(-50%,-50%);
+    top: 50%;
+    z-index:4;
+  }
+  .slider [class*="box"]:nth-child(1){
+    left:-10%;}
+  .slider [class*="box"]:nth-child(2){
+    left:-5%;}
+  .slider [class*="box"]:nth-child(3){
+    left:9%;}
+  .slider [class*="box"]:nth-child(4){
+    left:48%;}
+  .slider [class*="box"]:nth-child(5){
+    left:68%;}
+  .slider [class*="box"]:nth-child(6){
+    left:75%;}
+  
+  .slider .firstSlide {
+      -webkit-animation:  firstChild 1s;
+      animation:  firstChild 1s;
+      animation: slider 16s infinite alternate ease-in-out;
+  }
+
+  @-webkit-keyframes firstChild {
+      0% {left:100%; transform: scale(0.2) translate(-50%,-50%);}
+      100% {left: -13%; transform: scale(0.2) translate(-50%,-50%);}
+  }
+  @keyframes firstChild {
+     0% {left:100%; transform: scale(0.2) translate(-50%,-50%);}
+      100% {left: -13%; transform: scale(0.2) translate(-50%,-50%);}
+  }
+
+  .header3{
+    color: wheat;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-shadow: 3px 3px 1px Black;
+ 
+  }
+  .title{
+    font-size: 4em;
+  }
+  @media screen and (max-width: 490px) {
+    .title{
+      font-size: 2em;
+      text-align: center;
+    }
+  }
